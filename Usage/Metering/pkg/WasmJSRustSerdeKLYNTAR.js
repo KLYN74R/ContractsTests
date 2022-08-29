@@ -136,17 +136,18 @@ let energyUsed = 0;
     const metering = require('wasm-metering')
 
     const meteredWasm = metering.meterWASM(bytes,{
-        meterType: 'i32'
+        meterType: 'i32',
+        fieldStr:'energyUse'
     })
 
 
 
 let wasmMetered = await loader.instantiate(meteredWasm,{
     'metering': {
-      'usegas': energy => {
+      'energyUse': energy => {
         energyUsed += energy
         if (energyUsed > limit) {
-          throw new Error('out of gas!')
+          throw new Error('No more energy')
         }
       }
     }
