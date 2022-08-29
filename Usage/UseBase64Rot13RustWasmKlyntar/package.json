@@ -1,0 +1,16 @@
+{
+  "name": "usebase64rot13rustwasmklyntar",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.21.1",
+    "wasm-metering": "^0.2.1"
+  }
+}
