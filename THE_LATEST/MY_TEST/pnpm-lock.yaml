@@ -1,0 +1,19 @@
+lockfileVersion: 5.3
+
+specifiers:
+  json-as: ^0.2.6
+
+dependencies:
+  json-as: 0.2.6
+
+packages:
+
+  /as-string-sink/0.4.2:
+    resolution: {integrity: sha512-eOuOYPUwwv4QumoJIa7XxyS0OjXI6CyZz2dtba/hTeG5hzhq58HzAPD2FbHhjfYUXQaSAacFnJ9g2Zlfw56LgQ==}
+    dev: false
+
+  /json-as/0.2.6:
+    resolution: {integrity: sha512-adGnfJB57eQwVnw0yP3b0yUBhRWa9QUr/JDAgjYV2yvbl5ckV9P3ARAGwXywiZhOE854k1zL29vB7uGRZhM0cQ==}
+    dependencies:
+      as-string-sink: 0.4.2
+    dev: false
