@@ -4,7 +4,7 @@ import MOD from './pkg/WasmJSRustSerdeKLYNTAR.js'
 setTimeout(()=>{
 
 
-    let [myObj,energyUsed1] = MOD.getObject("Hello",130,33,"KLYNTAR");
+    let [myObj,energyUsed1] = MOD.getObject("Hello",130,33,"KLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTARKLYNTAR");
 
     console.log('Obj ',myObj,`(energy ${energyUsed1})`);
     
