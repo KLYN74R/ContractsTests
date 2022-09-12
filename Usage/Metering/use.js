@@ -11,6 +11,9 @@ setTimeout(()=>{
     let [coordsSum,energyUsed2] = MOD.getCoordsSum(myObj);
 
     console.log('CoordsSum ',coordsSum,`(energy ${energyUsed2})`);
-    
 
-},1000)
+    let [myObj2,energyUsed3] = MOD.getObject("Cool",1337,777,"KLY");
+
+    console.log('Finally ',myObj2,`(energy ${energyUsed3})`);
+
+},0)
