@@ -143,8 +143,8 @@ let energyUsed = 0;
 
 
 let wasmMetered = await loader.instantiate(meteredWasm,{
-    'metering': {
-      'energyUse': energy => {
+    metering: {
+      energyUse: energy => {
         energyUsed += energy
         if (energyUsed > limit) {
           throw new Error('No more energy')

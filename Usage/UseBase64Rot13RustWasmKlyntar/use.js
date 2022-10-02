@@ -13,6 +13,7 @@ const meteredWasm = metering.meterWASM(wasm,{
     meterType: 'i32'
 })
 
+
 //------------------- Лимиты энергии -------------------
 
 const energyLimit = 2000000
@@ -36,12 +37,12 @@ let toGetBase64 = wasmMetered.exports.__newString("Hello KLYNTAR");
 let toGetRot13 = wasmMetered.exports.__newString("KLYNTAR is the best");
 
 
-let base64Encoded = wasmMetered.exports.getBase64(toGetBase64);
-let rot13CipherText = wasmMetered.exports.getRot13(toGetRot13);
+// let base64Encoded = wasmMetered.exports.getBase64(toGetBase64);
+// let rot13CipherText = wasmMetered.exports.getRot13(toGetRot13);
 
 
-console.log('Base64 => ',wasmMetered.exports.__getString(base64Encoded))
-console.log('Rot13 => ',wasmMetered.exports.__getString(rot13CipherText))
+// console.log('Base64 => ',wasmMetered.exports.__getString(base64Encoded))
+// console.log('Rot13 => ',wasmMetered.exports.__getString(rot13CipherText))
 
 
 // console.log(`Result:${result}, energy used ${energyUsed * 1e-4}`);
