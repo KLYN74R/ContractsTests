@@ -1,7 +1,7 @@
 import MOD from '../../Rust/TestWithContext/pkg/TestWithContext.js'
 
 
-let str = MOD.get_qwerty();
+let str = MOD.get_my_qwerty();
 
 console.log(str)
 
