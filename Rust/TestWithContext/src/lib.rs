@@ -1,4 +1,5 @@
-use wasm_bindgen::prelude::*;
+use wasm_bindgen::prelude::wasm_bindgen;
+
 
 
 #[wasm_bindgen]
@@ -14,6 +15,9 @@ extern "C" {
     #[wasm_bindgen(js_namespace = lalalend)]
     fn makeCall();
 
+    #[wasm_bindgen(js_namespace = storage_module)]
+    fn get_from_mapping()->i32;
+
 
 }
 
@@ -27,5 +31,13 @@ pub fn get_my_qwerty()->String{
     let _ = get_leet_value();
 
     get_my_other_ip()+"+QWERTY+"
+
+}
+
+
+#[wasm_bindgen]
+pub fn get_cool(){
+
+    get_from_mapping();
 
 }
