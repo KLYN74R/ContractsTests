@@ -1,4 +1,4 @@
-import * as MOD from '../test-5-async-without-await/pkg/test_1_simple_object.js'
+import * as MOD from '../AsyncVMTests/test-7-simple-async/pkg/test_1_simple_object.js'
 
 // let myObject = await MOD.send_example_to_js(331)
 
